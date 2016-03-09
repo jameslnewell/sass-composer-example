@@ -1,0 +1,61 @@
+@import '@nib-styles/sass-breakpoints';
+@import '@nib-styles/colors';
+
+$white: #fff;
+$blue: #00f;
+$light-green: #00aa17;
+
+.order-card-hero {
+  background-image: url('./img/oshc-id-card-background.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  min-height: 400px;
+  padding-top: 20px;
+}
+
+.order-card-hero__title {
+  @include title(2, $white, false);
+  @include breakpoint('sm') {
+    @include title(1, $white, false);
+  };
+}
+
+.order-card-middle {
+  @include copy($white);
+  @include grid();
+  @include grid--halign-justify-center();
+  background-color: $light-green;
+  font-size: 22px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.order-card-middle__question-line {
+  color: $white;
+  font-weight: 300;
+  margin: 0;
+}
+
+.order-card-middle__info-line {
+  font-weight: 400;
+  margin: 0;
+}
+
+.order-card-cta {
+  background-color: $color-queen-elizabeth;
+  text-align: center;
+}
+
+.order-card-cta__inner-container {
+  background-color: $white;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.order-card-cta__label {
+  @include copy($color: 'grey');
+  color: $color-doc;
+  font-weight: 700;
+  padding: 0 20px;
+  text-transform: uppercase;
+}

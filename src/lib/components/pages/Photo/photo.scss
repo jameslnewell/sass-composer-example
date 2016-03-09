@@ -1,0 +1,122 @@
+@import '@nib-styles/sass-grid';
+
+$white: #fff;
+$dark-red: #8b0000;
+$light-green: #009623;
+
+.take-photo-container-tips {
+  align-items: center;
+  background-color: $color-doc;
+  color: $color-sneezy;
+  display: flex;
+  justify-content: center;
+  min-height: 30px;
+  text-align: center;
+}
+
+.take-photo-hero {
+  @include grid();
+  min-height: 400px;
+  transition: all .2s ease;
+  @include breakpoint('sm') {
+    min-height: 650px;
+  }
+}
+
+.take-photo-hero--left {
+  background: url('./img/good.jpg');
+  background-position: 40% 20%;
+  background-size: cover;
+  @include grid--unit--cols(6);
+  position: relative;
+}
+
+.take-photo-hero--right {
+  background: url('./img/bad.jpg');
+  background-position: 30% 20%;
+  background-size: cover;
+  @include grid--unit--cols(6);
+  position: relative;
+}
+
+.take-photo-hero--left-container {
+  color: $light-green;
+  margin-right: 10%;
+  position: absolute;
+  text-align: center;
+  top: 70%;
+  width: 90%;
+  @include breakpoint('sm') {
+    margin-right: 0;
+    width: 100%;
+  }
+}
+
+.take-photo-hero--right-container {
+  color: $dark-red;
+  margin-left: 10%;
+  position: absolute;
+  text-align: center;
+  top: 70%;
+  width: 90%;
+  @include breakpoint('sm') {
+    margin-left: 0;
+    width: 100%;
+  };
+}
+
+.take-photo-heading {
+  @include title(3, $padding: true);
+  font-weight: 900;
+
+  @include breakpoint('sm') {
+    font-size: 48px;
+    padding-top: 10px;
+  }
+}
+
+.take-photo-cta {
+  background-color: $white;
+}
+
+.take-photo-cta--button {
+  padding: 0 30px;
+}
+
+.take-photo-cta__inner-container {
+  padding: 15px 0;
+  text-align: center;
+}
+
+.tips-heading {
+  @include title(4, $color: 'grey', $padding: true);
+  font-size: 16px;
+  padding-right: 5px;
+}
+
+.tips-heading-icon {
+  display: inline;
+}
+
+.fileUpload {
+  overflow: hidden;
+  position: relative;
+
+  .label {
+    margin: -5px -20px;
+    padding: 5px 20px;
+  }
+
+  .input.upload {
+    cursor: pointer;
+    filter: alpha(opacity=0);
+    font-size: 20px;
+    height: 40px;
+    margin: 0;
+    opacity: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
