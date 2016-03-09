@@ -1,14 +1,14 @@
-// @import '@nib-styles/sass-spacing/compiled';
-// @import '@nib-styles/sass-grid/compiled';
-// @import '@nib-styles/v2-buttons';
-// @import '@nib-styles/footer-small';
-// @import '@nib-styles/v2-typography';
-// @import '@nib-styles/v2-icons';
-// @import '@nib-styles/colors';
-// @import '@nib-styles/react-form';
-// @import '@nib-components/react-cropperjs';
-//
-// @import 'normalize.css';
+@import '@nib-styles/sass-spacing/compiled';
+@import '@nib-styles/sass-grid/compiled';
+@import '@nib-styles/v2-buttons';
+@import '@nib-styles/footer-small';
+@import '@nib-styles/v2-typography';
+@import '@nib-styles/v2-icons';
+@import '@nib-styles/colors';
+@import '@nib-styles/react-form';
+@import '@nib-components/react-cropperjs';
+
+@import 'normalize.css';
 
 @import './lib/components/pages/Photo/photo';
 @import './lib/components/pages/Home/home';
