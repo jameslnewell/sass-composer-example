@@ -25,6 +25,6 @@
     "sass-composer": "^2.0.0-beta14"
   },
   "scripts": {
-    "build": "sass-composer src/index.scss -o dist/bundled.css"
+    "build": "node compose.js"
   }
 }
