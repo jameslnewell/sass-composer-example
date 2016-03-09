@@ -1,101 +1,23 @@
-@import '@nib-styles/sass-spacing/compiled';
-@import '@nib-styles/sass-grid/compiled';
-@import '@nib-styles/v2-buttons';
-@import '@nib-styles/footer-small';
-@import '@nib-styles/v2-typography';
-@import '@nib-styles/v2-icons';
-@import '@nib-styles/colors';
-@import '@nib-styles/react-form';
-@import '@nib-components/react-cropperjs';
-
-@import 'normalize.css';
+// @import '@nib-styles/sass-spacing/compiled';
+// @import '@nib-styles/sass-grid/compiled';
+// @import '@nib-styles/v2-buttons';
+// @import '@nib-styles/footer-small';
+// @import '@nib-styles/v2-typography';
+// @import '@nib-styles/v2-icons';
+// @import '@nib-styles/colors';
+// @import '@nib-styles/react-form';
+// @import '@nib-components/react-cropperjs';
+//
+// @import 'normalize.css';
 
 @import './lib/components/pages/Photo/photo';
 @import './lib/components/pages/Home/home';
 
-$blue: #00f;
-$white: #fff;
-$gray: #444;
-
-body {
-  background-color: $color-doc;
-}
-
-// TODO: This should handled nib-styles/react-header stuff
-.micro-header {
-  background-color: hsl(0, 100%, 100%);
-  padding: 9px;
-  text-align: center;
-}
-
 .micro-header__logo {
   background: url('./img/green.svg') no-repeat;
-  display: inline-block;
-  height: 22px;
-  text-indent: -99999px;
-  width: 42px;
 }
 
-.nib-header {
-  background-color: hsl(134, 100%, 29%);
-  color: $white;
-  padding: .5px;
-  text-align: center;
-}
-
-.nib-footer {
-  background-color: $gray;
-  background-image: none;
-  color: $white;
-  font-size: .8em;
-  text-align: center;
-}
-
-.content {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1200px;
-}
-
-.outsideWrapper {
-  border: 1px solid $blue;
-  height: 256px;
-  margin: 20px 60px;
-  width: 256px;
-}
-
-.insideWrapper {
-  height: 100%;
-  position: relative;
-  width: 100%;
-}
-
-.coveredImage {
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-
-.coveringCanvas {
-  background-color: rgba(255, 0, 0, .1);
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-
-}
 
 .cropper-crop-box:before {
   background: url('./img/silhouette.png') no-repeat center;
-  background-size: cover;
-  bottom: 0;
-  content: ' ';
-  left: 0;
-  opacity: .6px;
-  position: absolute;
-  right: 0;
-  top: 0;
 }
